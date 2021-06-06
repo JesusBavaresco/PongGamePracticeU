@@ -63,8 +63,8 @@ function draw(){
     }
 }
 
-function keyInput(e) {
-    switch(e.keyCode){
+function keyInput(event) {
+    switch(event.keyCode){
         case 37:
             paddleX -= 20;
             if(paddleX < 0){
