@@ -103,8 +103,8 @@ function resetGame() {
     paddleX = 150;
     ballX = 150;
     ballY = 150;
-    ballDX = Math.floor(Math.random() * 2) + 1;
-    ballDY = 4;
+    ballDX = difficult[Math.floor(Math.random() * 6)];
+    ballDY = difficult[Math.floor(Math.random() * 6)];
 
     drawGameCanvas();
     resetButton.parentNode.removeChild(resetButton);
